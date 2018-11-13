@@ -15,7 +15,7 @@ h4. From the RailsApps Project
 
 The "RailsApps":http://railsapps.github.io/ open source project offers starter applications and tutorials for Rails developers. Generate the applications with the Rails Composer tool.
 
-All the code is explained in the Capstone Rails Tutorials. You can purchase the "Capstone Rails Tutorials":https://tutorials.railsapps.org/ to support the project.
+MIRNES All the code is explained in the Capstone Rails Tutorials. You can purchase the "Capstone Rails Tutorials":https://tutorials.railsapps.org/ to support the project.
 
 h4. If You Are New to Rails
 
