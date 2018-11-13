@@ -37,4 +37,6 @@ group :test do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'selenium-webdriver'
+  gem 'rspec'
+  gem 'rspec_junit_formatter'
 end
