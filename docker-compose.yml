@@ -1,0 +1,31 @@
+version: '3'
+services:
+  db:
+    image: mysql:5.5
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: mirnes
+      MYSQL_USER: root
+      MYSQL_PASSWORD: mirnes
+      MYSQL_DATABASE: mysql1
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+  rails:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    environment:
+      DATABASE_HOST: mysql1
+      DATABASE_USER: root
+      DATABASE_PASSWORD: mirnes
+    ports:
+      - "8888:80"
+    depends_on:
+      - db
+    links:
+      - db
+      - db:mysql1
+    entrypoint: [bin/entry]
+    restart: on-failure
