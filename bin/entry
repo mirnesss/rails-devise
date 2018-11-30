@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-rake db:create
-rake db:migrate
+bundle exec rake db:create
+bundle exec rake db:migrate
 
 exec "$@"
-rails server -b 0.0.0.0 -p 80
+#rails server -b 0.0.0.0 -p 80
