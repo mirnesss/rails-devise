@@ -20,7 +20,7 @@ group :development do
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass'
-gem 'devise'
+gem 'devise', '~> 4.4.0'
 gem 'high_voltage'
 group :development do
   gem 'better_errors'
